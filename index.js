@@ -1,12 +1,12 @@
 import { kepLista } from "./adatok.js";
-import Kartyak from "./Kartyak.js";
+import Kepek from "./Kepek.js";
 const kivalasztottLista=[];
 
 const divElem = $(".kepek");
 const kivElem = $(".kepnezo");
 kivElem.empty();
 
-new Kartyak(kepLista, divElem);
+new Kepek(kepLista, divElem);
 
 
 

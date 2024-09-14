@@ -1,18 +1,40 @@
 
 export const kepLista = [
     {
-    url:"https://prove.hu/wp-content/uploads/2019/03/%C3%8Dgy-utazd-be-a-vil%C3%A1got-%C3%A1llatok-kihaszn%C3%A1l%C3%A1sa-n%C3%A9lk%C3%BCl.jpg",
-    nev: "Fánik",
-     
+        url: "kepek/DSC_0051.JPG",
+        nev: "Szittyótér vége",
     },
     {
-    url:"https://kedvenceink.hu/wp-content/uploads/2020/04/panda-1024x686.jpg",
-    nev:"Panda",
-      
+        url: "kepek/DSC_0076.JPG",
+        nev: "Forgalmi rend változás",
     },
 
     {
-        url:"https://foteldoki.hu/storage/2379/alpaka.jpg",
-        nev: "Alpaka",
+        url: "kepek/DSC_0078.JPG",
+        nev: "Vallomás a Jászságról",
     },
-  ];
+    {
+        url: "kepek/DSC_0092.JPG",
+        nev: "Tiltó tábla",
+    },
+    {
+        url: "kepek/DSC_0162.JPG",
+        nev: "Sportpályák vendégeknek",
+    },
+    {
+        url: "kepek/DSC_0181.JPG",
+        nev: "Csikkek helye",
+    },
+    {
+        url: "kepek/DSC_0210.JPG",
+        nev: "Én vagyok az a pád",
+    },
+    {
+        url: "kepek/DSC_0329.JPG",
+        nev: "Megfejthetetlen",
+    },
+    {
+        url: "kepek/DSC_0541.JPG",
+        nev: "Ne etesd a kacsákat",
+    },
+];
