@@ -1,19 +1,14 @@
 import { kepLista } from "./adatok.js";
 import Kepek from "./Kepek.js";
-const kivalasztottLista=[];
+import NagyKepek from "./NagyKepek.js";
+
 
 const divElem = $(".kepek");
 const kivElem = $(".kepnezo");
-kivElem.empty();
+
 
 new Kepek(kepLista, divElem);
+new NagyKepek (kepLista, kivElem);
 
 
 
-$(window).on("kivalaszt",(event)=>{
-  console.log(event.detail) //ezt adta, át infót a saaját eseménynél, az adott kártyához tartozó kutya adata.
-  kivalasztottLista.push(event.detail)
-  console.log(kivalasztottLista)
-
-  new Kartyak(kivalasztottLista, kivElem);
-})

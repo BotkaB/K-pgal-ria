@@ -7,15 +7,19 @@ export default class Kep {
 
 
         this.#egyKepKiiras();
-        this.gombElem = $(".kivalaszt:last")
-        console.log(this.gombElem);
-        this.#esemenyKezelo()
+        this.fenykep = $(".kivalaszt:last")
+        //   console.log(this.fenykep);
+        if (this.fenykep.length) {
+            this.#esemenyKezelo();
+        } else {
+            console.error("A .kivalaszt elem nem található.");
+        }
     }
 
     #esemenyKezelo() {
 
 
-        this.gombElem.on("click", () => {
+        this.fenykep.on("click", () => {
 
             console.log(this);
 
@@ -26,9 +30,9 @@ export default class Kep {
     }
     #egyKepKiiras() {
 
-        this.szuloElem.append(`<div class="col-lg-4 col-md-6 card"> 
+        this.szuloElem.append(`<div class="card kivalaszt"> 
                             <div class="card-body">
-                                <h3 class="card-title"><img src=${this.#kep.url}></h3>
+                                <h3 class="card-title"><img src="${this.#kep.url}"></h3>
                                 <p class="card-text"> ${this.#kep.nev}</p>
                            
                               

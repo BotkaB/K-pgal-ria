@@ -1,5 +1,22 @@
-.card img{
-    width: 50%;
-  
-    object-fit: cover;
-  }
+.card-body {
+    display: grid;
+    place-items: center;
+    /* Vízszintes és függőleges középre igazítás */
+    text-align: center;
+}
+
+.card-title img {
+    max-width: 100%;
+    /* A kép méretének korlátozása a szülő elem szélességéhez */
+    height: auto;
+    /* A kép arányainak megtartása */
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatikusan kitölti a rendelkezésre álló helyet */
+    gap: 16px; /* Távolság a kártyák között */
+}
+
+.card {
+    box-sizing: border-box; /* A padding és border beleértendő a szélességbe */
+}
