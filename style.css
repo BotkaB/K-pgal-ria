@@ -11,12 +11,49 @@
     height: auto;
     /* A kép arányainak megtartása */
 }
+
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatikusan kitölti a rendelkezésre álló helyet */
-    gap: 16px; /* Távolság a kártyák között */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Automatikusan kitölti a rendelkezésre álló helyet */
+    gap: 16px;
+    /* Távolság a kártyák között */
 }
 
 .card {
-    box-sizing: border-box; /* A padding és border beleértendő a szélességbe */
+    box-sizing: border-box;
+    /* A padding és border beleértendő a szélességbe */
 }
+
+.bal-gomb,
+.jobb-gomb {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.kepnezo.container {
+    display: flex;
+    justify-content: center;
+    /* Vízszintes középre igazítás */
+    align-items: center;
+    /* Függőleges középre igazítás */
+    gap: 20px;
+    /* Távolság a gombok és a kártya között */
+}
+
+.kepnezo.card-container {
+    width: 100%;
+    /* A kártya szélessége */
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    /* Vízszintes középre igazítás */
+    align-items: center;
+    /* Függőleges középre igazítás */
+    gap: 20px;
+
+}
+
+
+

@@ -4,7 +4,7 @@ import NagyKepek from "./NagyKepek.js";
 
 
 const divElem = $(".kepek");
-const kivElem = $(".kepnezo");
+const kivElem = $(".kepnezo.card-container");
 
 
 new Kepek(kepLista, divElem);
