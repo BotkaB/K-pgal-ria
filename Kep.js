@@ -21,10 +21,11 @@ export default class Kep {
 
         this.fenykep.on("click", () => {
 
-            console.log(this);
 
 
             const e = new CustomEvent("kivalaszt", { detail: this.#kep })
+            
+            console.log(this.#kep);
             window.dispatchEvent(e)
         });
     }

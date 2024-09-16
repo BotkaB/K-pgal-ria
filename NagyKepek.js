@@ -18,12 +18,12 @@ export default class NagyKepek {
         this.#jobbGomb = $('.jobb-gomb');
         this.#balGomb.on('click', () => this.#balraLep());
         this.#jobbGomb.on('click', () => this.#jobbraLep());
-        this.#kepFrissit();
+        this.#kepKeszit();
         this.#kepCsere();
 
     }
 
-    #kepFrissit() {
+    #kepKeszit() {
         this.szuloElem.empty();
         new Kep(this.#lista[this.#index], this.szuloElem);
     }
@@ -40,7 +40,7 @@ export default class NagyKepek {
            // this.szuloElem.empty();
 
             //new Kep(event.detail, this.szuloElem);
-            this.#kepFrissit();
+            this.#kepKeszit();
         })
     }
 
@@ -50,13 +50,13 @@ export default class NagyKepek {
 
     #balraLep() {
         this.#index = (this.#index > 0) ? this.#index - 1 : this.#lista.length - 1;
-        this.#kepFrissit();
+        this.#kepKeszit();
     }
 
 
     #jobbraLep() {
         this.#index = (this.#index < this.#lista.length - 1) ? this.#index + 1 : 0;
-        this.#kepFrissit();
+        this.#kepKeszit();
     }
 
 
