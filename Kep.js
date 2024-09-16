@@ -31,9 +31,9 @@ export default class Kep {
     }
     #egyKepKiiras() {
 
-        this.szuloElem.append(`<div class="card kivalaszt"> 
+        this.szuloElem.append(`<div class="card"> 
                             <div class="card-body">
-                                <h3 class="card-title"><img src="${this.#kep.url}"></h3>
+                                <h3 class="kivalaszt card-title"><img src="${this.#kep.url}"></h3>
                                 <p class="card-text"> ${this.#kep.nev}</p>
                            
                               

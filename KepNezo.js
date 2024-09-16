@@ -2,7 +2,7 @@
 import Kep from "./Kep.js";
 
 
-export default class NagyKepek {
+export default class KepNezo {
     #lista = [];
     #index = 0;
     #balGomb;
