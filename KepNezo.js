@@ -8,6 +8,8 @@ export default class KepNezo {
     #balGomb;
     #jobbGomb;
 
+    #aktualisKep = null;
+
 
 
     constructor(lista, szuloElem) {
@@ -24,8 +26,16 @@ export default class KepNezo {
     }
 
     #kepKeszit() {
-        this.szuloElem.empty();
-        new Kep(this.#lista[this.#index], this.szuloElem);
+        /*
+                this.szuloElem.empty();
+                new Kep(this.#lista[this.#index], this.szuloElem);
+        */
+        const ujKep = this.#lista[this.#index];
+        if (this.#aktualisKep !== ujKep) { 
+            this.szuloElem.empty();
+            new Kep(ujKep, this.szuloElem);
+            this.#aktualisKep = ujKep; 
+        }
     }
 
 
@@ -34,13 +44,13 @@ export default class KepNezo {
 
         $(window).on("kivalaszt", (event) => {
             console.log(event.detail)
+
             this.#index = this.#lista.findIndex(Kep => Kep.url === event.detail.url && Kep.nev === event.detail.nev)
-
             console.log(this.#index);
-           // this.szuloElem.empty();
-
-            //new Kep(event.detail, this.szuloElem);
             this.#kepKeszit();
+
+
+
         })
     }
 
@@ -49,15 +59,20 @@ export default class KepNezo {
 
 
     #balraLep() {
+
         this.#index = (this.#index > 0) ? this.#index - 1 : this.#lista.length - 1;
         this.#kepKeszit();
+
     }
 
 
     #jobbraLep() {
+
         this.#index = (this.#index < this.#lista.length - 1) ? this.#index + 1 : 0;
         this.#kepKeszit();
+
     }
+
 
 
 
