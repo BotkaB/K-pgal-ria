@@ -32,7 +32,8 @@ export default class Kep {
         this.szuloElem.append(`<div class="card"> 
                             <div class="card-body">
                                 <h3 class="kivalaszt card-title"><img src="${this.#kep.url}" alt="${this.#kep.nev}"></h3>
-                                <p class="card-text"> ${this.#kep.nev}</p>
+                                <p class="card-text"> ${this.#kep.cim}</p>
+                                <p class="card-text"> ${this.#kep.leiras}</p>
                            
                               
                             </div>

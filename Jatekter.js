@@ -1,6 +1,6 @@
 import Kep from "./Kep.js";
 
-export default class Kepek {
+export default class Jatekter {
     #lista = [];
     constructor(lista, szuloElem) {
         this.#lista = lista;
