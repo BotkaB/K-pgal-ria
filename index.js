@@ -1,6 +1,6 @@
 import { kepLista } from "./adatok.js";
 import Jatekter from "./Jatekter.js";
-//import KepNezo from "./KepNezo.js";
+// import KepNezo from "./KepNezo.js";
 import KepNezo2 from "./KepNezo2.js";
 
 
