@@ -2,10 +2,11 @@ import Kep from "./Kep.js";
 
 export default class Jatekter {
     #lista = [];
+    #szuloElem;
     constructor(lista, szuloElem) {
         this.#lista = lista;
-        this.szuloElem = szuloElem;
-        this.szuloElem.empty();
+        this.#szuloElem = szuloElem;
+        this.#szuloElem.empty();
         this.#kepMegjelenit();
 
     }
@@ -13,7 +14,8 @@ export default class Jatekter {
     #kepMegjelenit() {
         this.#lista.forEach((kep) => {
 
-            new Kep(kep, this.szuloElem);
+            new Kep(kep, this.#szuloElem);
+            console.log(this.#szuloElem)
         });
 
     }
